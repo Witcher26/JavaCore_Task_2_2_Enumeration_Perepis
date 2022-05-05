@@ -1,4 +1,4 @@
-# Task2_2_Enumeration-
+# Task2_2_Enumeration_Перепись (при помощи сортировки Stream API)
 Stream API. Потоки, повторные вызовы, основные методы.  
 Задача 2 - "Перепись населения".
 
@@ -22,55 +22,8 @@ public enum Education {
     HIGHER
 }
 ```
-3. `Person`, содержащий информацию об имени, возрасте, поле и образовании человека:
-```java
-class Person {
-    private String name;
-    private String family;
-    private Integer age;
-    private Sex sex;
-    private Education education;
+3. `Person`, содержащий информацию об имени, возрасте, поле и образовании человека.
 
-    public Person(String name, String family, int age, Sex sex, Education education) {
-        this.name = name;
-        this.family = family;
-        this.age = age;
-        this.sex = sex;
-        this.education = education;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getFamily() {
-        return family;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public Sex getSex() {
-        return sex;
-    }
-
-    public Education getEducation() {
-        return education;
-    }
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", family='" + family + '\'' +
-                ", age=" + age +
-                ", sex=" + sex +
-                ", education=" + education +
-                '}';
-    }
-}
-```
 
 Из коллеции объектов `Person` необходимо:
 1. Найти количество несовершеннолетних (т.е. людей младше 18 лет).
